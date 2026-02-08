@@ -1,0 +1,31 @@
+{
+  // Input / Function
+  "format_on_save": "on",
+  "tab_size": 2,
+
+  // File Scan/Search
+  "file_scan_exclusions": [
+    "**/.DS_Store",
+    "**/.keep",
+    ".bundle/",
+    ".git/",
+    ".irb_history",
+    ".ruby-lsp/",
+  ],
+
+  // Language / LSP
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"],
+    },
+  },
+  "lsp": {
+    "ruby-lsp": {
+      "initialization_options": {
+        "enabledFeatures": {
+          "diagnostics": false,
+        },
+      },
+    },
+  },
+}
